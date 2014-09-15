@@ -29,10 +29,18 @@ Route::get('/', function()
        // $usersnot = DB::table('users')->where('username', '!=', 'tom')->get();
         //$usersnot = User::where('username', '!=', 'tom')->get();
         //$users = User::all();
-        $user = new User;
+
+       /* $user = new User;
         $user->username = 'newuser';
         $user->password = Hash::make('password');
         $user->save();
+       */
+        User::create([
+            'username' => 'AnotherUser',
+            'password' => Hash::make('1234')
+
+        ]); //mass assignment exception
+
         //$user = DB::table('users')->find(1); //returns those with id 1
 
 
