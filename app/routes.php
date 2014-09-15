@@ -30,7 +30,8 @@ Route::get('/', function()
 
         //return $users;
 
-        dd($user); // die(var_dump($user));
+        //dd($user); // die(var_dump($user));
+        return $user->username;
 
     }
 );
