@@ -28,14 +28,15 @@ Route::get('/', function()
         //$users = DB::table('users')->get(); //returns
        // $usersnot = DB::table('users')->where('username', '!=', 'tom')->get();
         $usersnot = User::where('username', '!=', 'tom')->get();
+        $users = User::all();
         //$user = DB::table('users')->find(1); //returns those with id 1
 
 
-        return $usersnot;
+        //return $usersnot;
 
         //dd($user); // die(var_dump($user));
         //return $user->username;
-        //return $users;
+        return $users;
 
     }
 );
