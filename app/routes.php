@@ -29,11 +29,12 @@ Route::get('/', function()
         $usersnot = DB::table('users')->where('username', '!=', 'tom')->get();
         $user = DB::table('users')->find(1); //returns those with id 1
 
+
         //return $users;
 
         //dd($user); // die(var_dump($user));
         //return $user->username;
-        return $usersnot;
+        return $users;
 
     }
 );
