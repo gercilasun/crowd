@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('foo/bar', function()
+Route::get('/', function()
 {
 	return View::make('hello');
     //app/views/hello.php or hello.blade.php
