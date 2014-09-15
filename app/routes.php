@@ -13,7 +13,9 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+    $name = 'Gokalp';
+
+	return View::make('hello')->with('name', $name);
     //app/views/hello.php or hello.blade.php
 
 });
