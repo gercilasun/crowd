@@ -41,6 +41,10 @@ Route::get('/', function()
 
         ]); //mass assignment exception
 
+        $user = User::find(2);
+        $user->username = 'Updatedname';
+        $user->save();
+
         //$user = DB::table('users')->find(1); //returns those with id 1
 
 
