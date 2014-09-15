@@ -33,7 +33,7 @@ Route::get('/', function()
 
         //dd($user); // die(var_dump($user));
         //return $user->username;
-        return $users;
+        return $usersnot;
 
     }
 );
