@@ -25,9 +25,12 @@ Route::get('/users', function()
 Route::get('/', function()
 
     {
-        $users = DB::table('users')->get();
+        $users = DB::table('users')->get(); //returns all
+        $user = DB::table('users')->find(1); //returns those with id 1
 
-        return $users;
+        //return $users;
+
+        dd($user); // die(var_dump($user));
 
     }
 );
